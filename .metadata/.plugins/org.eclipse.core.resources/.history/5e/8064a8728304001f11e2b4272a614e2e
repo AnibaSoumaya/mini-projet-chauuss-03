@@ -1,0 +1,14 @@
+package com.soumaya.chaussures.repos;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.soumaya.chaussures.entities.Chaussure;
+
+public interface ChaussureRepository extends JpaRepository<Chaussure, Long> {
+
+	List<Chaussure> findByNomChaussure(String nom);
+	List<Chaussure> findByNomChaussureContains(String nom);
+	
+}

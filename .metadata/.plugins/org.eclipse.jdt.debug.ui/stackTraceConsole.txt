@@ -1,0 +1,17 @@
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.soumaya.chaussures.entities.Lieu.chaussures: could not initialize proxy - no Session
+	at org.hibernate.collection.spi.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:634)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:217)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:613)
+	at org.hibernate.collection.spi.AbstractPersistentCollection.read(AbstractPersistentCollection.java:136)
+	at org.hibernate.collection.spi.PersistentBag.toString(PersistentBag.java:589)
+	at java.base/java.lang.String.valueOf(String.java:4220)
+	at com.soumaya.chaussures.entities.Lieu.toString(Lieu.java:16)
+	at java.base/java.lang.String.valueOf(String.java:4220)
+	at com.soumaya.chaussures.entities.Chaussure.toString(Chaussure.java:63)
+	at java.base/java.lang.String.valueOf(String.java:4220)
+	at java.base/java.io.PrintStream.println(PrintStream.java:1047)
+	at com.soumaya.chaussures.ChuassuresApplicationTests.testListerTousChaussures(ChuassuresApplicationTests.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

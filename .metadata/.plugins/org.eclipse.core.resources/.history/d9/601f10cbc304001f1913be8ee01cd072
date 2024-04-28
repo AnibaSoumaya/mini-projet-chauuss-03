@@ -1,0 +1,8 @@
+package com.soumaya.chaussures.entities;
+
+import org.springframework.data.rest.core.config.Projection;
+
+@Projection(name = "nomProd", types = { Chaussure.class })
+public interface ChaussureProjection {
+	public String getNomChaussure();
+}
